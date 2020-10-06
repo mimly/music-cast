@@ -1,34 +1,38 @@
 {
-  "nativescript": {
-    "id": "org.nativescript.MusicCast2",
-    "tns-android": {
-      "version": "5.3.1"
-    },
-    "tns-ios": {
-      "version": "5.3.1"
-    }
-  },
+  "name": "music-cast",
+  "main": "main.js",
+  "version": "1.0.0",
   "description": "Yamaha R-N602 Controller",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
+  "author": "mimly <m.j.mlynczak@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk && tns run",
+    "lint": "eslint 'src/**/*.js' 'src/**/*.vue'",
+    "lint-fix": "eslint --fix 'src/**/*.js' 'src/**/*.vue'"
+  },
   "dependencies": {
-    "nativescript-theme-core": "^1.0.6",
-    "nativescript-vue": "~2.2.0",
-    "tns-core-modules": "^5.3.2"
+    "@nativescript/core": "^7.0.3",
+    "@nativescript/theme": "^2.3.3",
+    "@vue/devtools": "^5.3.3",
+    "nativescript-socketio": "^3.3.1",
+    "nativescript-toasty": "^3.0.0-alpha.2",
+    "nativescript-vue": "^2.8.1",
+    "nativescript-vue-devtools": "^1.4.0",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "~7.1.0",
-    "@babel/preset-env": "~7.1.0",
-    "@vue/devtools": "^5.3.3",
-    "babel-loader": "^8.0.6",
-    "nativescript-dev-webpack": "~0.21.0",
-    "nativescript-socketio": "^3.3.1",
-    "nativescript-toasty": "^1.4.0",
-    "nativescript-vue-devtools": "^1.4.0",
-    "nativescript-vue-template-compiler": "~2.2.0",
-    "node-sass": "~4.11.0",
-    "vue-loader": "~15.4.0"
-  },
-  "gitHead": "aaf1b81dc02ec5757ffff8131651798f179712fc",
-  "readme": "NativeScript Application"
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@nativescript/android": "7.0.0",
+    "@nativescript/webpack": "^3.0.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "nativescript-vue-template-compiler": "^2.8.1",
+    "nativescript-worker-loader": "~0.12.1",
+    "sass": "^1.26.10",
+    "vue-loader": "^15.9.3"
+  }
 }
